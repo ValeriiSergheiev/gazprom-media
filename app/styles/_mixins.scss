@@ -1,0 +1,3 @@
+@mixin transition ($int) {
+	transition: all $int ease;
+}

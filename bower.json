@@ -2,7 +2,9 @@
   "name": "www",
   "private": true,
   "dependencies": {
-    "foundation-sites": "^6.4.3"
+    "foundation-sites": "^6.4.3",
+    "css-hamburgers": "^0.9.1",
+    "slick-carousel": "^1.8.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",

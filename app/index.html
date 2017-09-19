@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>www</title>
+  <title>Gazprom Media</title>
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -24,14 +25,109 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="row">
-      <div class="small-6 columns">6 columns</div>
-      <div class="small-6 columns">6 columns</div>
-    </div>
-    <div class="row">
-      <div class="small-12 medium-6 large-4 columns">12/6/4 columns</div>
-      <div class="small-12 medium-6 large-8 columns">12/6/8 columns</div>
-    </div>
+    <!-- Header -->
+    <header>
+      <div class="row header-top">
+        <div class="small-12  large-4 columns logo-gazprom">
+          <a class="op" href="#"><img src="images/gm.svg" alt="logo"></a>
+        </div>
+
+        <div class="small-12  large-4 columns text-center logo-kit-group">
+          <a class="op" href="#"><img src="images/kit.svg" alt="logo"></a>
+        </div>
+      </div>
+
+      <div class="row header-bottom">
+
+        <div class="small-12 large-3 columns">
+          <div class="lang-dropdown">
+            <button class="lang-dropbtn">RU</button>
+            <img src="images/arrow_lang.svg" alt="lang">
+            <div class="lang-dropdown-content">
+              <a href="#">EN</a>
+              <a href="#">DE</a>
+              <a href="#">FR</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="small-12 large-6 columns">
+          <nav class="menu">
+            <a href="#">о нас</a>
+            <a href="#">новости</a>
+            <a href="#">производство</a>
+            <a href="#">кинопрокат</a>
+            <a href="#">дистрибьюция</a>
+          </nav>
+        </div>
+
+        <div class="small-12 large-3 columns clearfix">
+          <div class="search">
+            <input id="search" type="text" placeholder="поиск">
+            <label for="search"><img src="images/icon_search.svg" alt="search"></label>
+          </div>
+        </div>
+
+        <div class="mob-btn">
+          <button class="hamburger hamburger--spring" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main section -->
+    <main>
+      <div class="row">
+        <div class="small-12 columns">
+          <div class="slider-home-1">
+
+            <!-- image 325 x 270 -->
+
+            <div class="slide-home-1 text-center">
+              <img src="images/slider-home-1/slide-1.jpg" alt="slide">
+              <div class="slide-home-1-title">
+                <h3>Project Title</h3>
+              </div>
+            </div>
+
+            <div class="slide-home-1 text-center">
+              <img src="images/slider-home-1/slide-2.jpg" alt="slide">
+              <div class="slide-home-1-title">
+                <h3>Project Title</h3>
+              </div>
+            </div>
+
+            <div class="slide-home-1 text-center">
+              <img src="images/slider-home-1/slide-3.jpg" alt="slide">
+              <div class="slide-home-1-title">
+                <h3>Project Title</h3>
+              </div>
+            </div>
+
+            <div class="slide-home-1 text-center">
+              <img src="images/slider-home-1/slide-2.jpg" alt="slide">
+              <div class="slide-home-1-title">
+                <h3>Project Title</h3>
+              </div>
+            </div>
+
+            <div class="slide-home-1 text-center">
+              <img src="images/slider-home-1/slide-3.jpg" alt="slide">
+              <div class="slide-home-1-title">
+                <h3>Project Title</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main section -->
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -48,6 +144,7 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/what-input/dist/what-input.js"></script>
     <script src="/bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

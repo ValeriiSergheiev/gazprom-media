@@ -1,0 +1,80 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+ /* Medium Devices, Desktops */
+ @media only screen and (max-width : 1270px) {
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+
+}
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1024px) {
+
+        .header-bottom {
+            background-color: $main-grey;
+            position: relative;
+            z-index: 9999;
+            padding: 15px 0;
+        }
+
+        .menu {
+            display: none;
+            text-align: center;
+            padding: 20px 0;
+            margin: 10px 0;
+            a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        .search {
+            display: none;
+            float: none;
+            width: 140px;
+            margin: 0 auto;
+            input {
+                background-color: lighten($main-grey, 5%);
+            }
+        }
+
+        .mob-btn {
+            display: block;
+        }
+
+        .slide-home-1 {
+            border-right: none;
+        }
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    	.logo-gazprom {
+    		text-align: center;
+    		margin-bottom: 30px;
+    	}
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
