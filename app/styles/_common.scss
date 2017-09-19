@@ -49,3 +49,22 @@ input, button {
 .bg-mob-menu {
 	background-color: lighten($main-grey, 2%) !important;
 }
+
+.section-title {
+	border: 1px solid $main-blue;
+	h4 {
+		font-size: 30px;
+		font-weight: normal;
+		color: $main-blue;
+	}
+}
+
+.mt-1 {
+	margin-top: -1px;
+}
+
+.row-3 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+

@@ -52,6 +52,15 @@
             border-right: none;
         }
 
+        .border-item-center {
+            border-left: 1px solid $main-blue;
+            border-right: 1px solid $main-blue;
+        }
+
+        .company-item {
+            min-height: 250px;
+        }
+
     }
 
     /* Medium Devices, Desktops */
@@ -60,7 +69,11 @@
     }
 
     /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
+    @media only screen and (max-width : 640px) {
+
+        .row-3 {
+            padding: 0 10px;
+        }
 
     }
 

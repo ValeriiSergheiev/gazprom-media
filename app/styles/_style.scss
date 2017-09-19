@@ -64,4 +64,23 @@ main {}
 	opacity: .2;
 	cursor: default;
 }
+
+.company-item {
+	border: 1px solid $main-blue;
+	min-height: 350px;
+	p {
+		letter-spacing: -.01em;
+		padding: 0 35px;
+	}
+}
+
+.border-item-center {
+	border-left: none;
+	border-right: none;
+}
+
+.company-item-logo {
+	height: 150px;
+	line-height: 150px;
+}
 /* End Main section */
