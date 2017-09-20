@@ -83,4 +83,44 @@ main {}
 	height: 150px;
 	line-height: 150px;
 }
+
+//Slider 5 items
+.slider-2 {
+	border: 1px solid $main-blue;
+}
+
+.slide-simple {
+	@extend .slide-home-1;
+	padding: 22px 0;
+	img {
+		max-width: 185px;
+	}
+}
+
+.slide-simple-text {
+	position: relative;
+	height: 220px;
+	padding: 0 10px;
+	h3 {
+		font-size: 30px;
+		font-weight: normal;
+		margin: 0;
+		padding-top: 60px;
+		line-height: 1.4;
+	}
+	p {
+		margin: 0;
+	}
+	span {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		font-family: Proxima;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: $main-blue;
+		line-height: 1;
+	}
+}
 /* End Main section */

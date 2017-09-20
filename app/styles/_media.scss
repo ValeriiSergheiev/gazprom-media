@@ -52,6 +52,10 @@
             border-right: none;
         }
 
+        .slide-simple {
+            border-right: 1px solid $main-blue;
+        }
+
         .border-item-center {
             border-left: 1px solid $main-blue;
             border-right: 1px solid $main-blue;
@@ -73,6 +77,10 @@
 
         .row-3 {
             padding: 0 10px;
+        }
+
+        .slide-simple {
+            border-right: none;
         }
 
     }
