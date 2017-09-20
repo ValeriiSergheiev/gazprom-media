@@ -9,7 +9,8 @@ main {}
 .slide-home-1 {
 	position: relative;
 	padding: 30px 0;
-	border-right: 1px solid $main-blue;
+	border-left: 1px solid $main-blue;
+	margin-left: -1px;
 	img {
 		display: inline-block;
 		max-width: 325px;
@@ -17,18 +18,24 @@ main {}
 	}
 }
 
+.slick-current {
+	border-left: none;
+	margin-left: 0;
+}
+
 .slide-home-1-title {
 	position: absolute;
-	bottom: 31px;
+	padding: 25px 0 10px;
+	bottom: 30px;
 	left: calc(50% - 235px / 2);
-	height: 65px;
+	min-height: 65px;
 	width: 235px;
 	background-color: $main-grey;
 	h3 {
-		font-size: 30px;
+		font-size: 22px;
 		font-weight: normal;
 		margin: 0;
-		line-height: 65px;
+		line-height: 1.2;
 	}
 }
 
@@ -61,13 +68,20 @@ main {}
 }
 
 .slick-disabled {
-	opacity: .2;
+	opacity: 0;
 	cursor: default;
+	@include transition (.5s);
 }
 
 .company-item {
 	border: 1px solid $main-blue;
-	min-height: 350px;
+	a {
+		display: block;
+		height: 350px;
+		&:hover {
+			opacity: .8;
+		}
+	}
 	p {
 		letter-spacing: -.01em;
 		padding: 0 35px;
@@ -95,18 +109,29 @@ main {}
 	img {
 		max-width: 185px;
 	}
+	&:hover .slide-simple-text {
+		opacity: 1;
+		@include transition (.3s);
+	}
 }
 
 .slide-simple-text {
-	position: relative;
-	height: 220px;
+	position: absolute;
+	opacity: 0;
+	//height: 220px;
 	padding: 0 10px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	//z-index: 2000;
+	background-color: $main-grey;
 	h3 {
-		font-size: 30px;
+		font-size: 22px;
 		font-weight: normal;
 		margin: 0;
-		padding-top: 60px;
-		line-height: 1.4;
+		padding-top: 90px;
+		line-height: 1.2;
 	}
 	p {
 		margin: 0;
@@ -115,7 +140,7 @@ main {}
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 0;
+		bottom: 20px;
 		font-family: Proxima;
 		font-size: 12px;
 		text-transform: uppercase;

@@ -49,11 +49,18 @@
         }
 
         .slide-home-1 {
-            border-right: none;
+            border: none;
+            margin-left: 0;
         }
 
         .slide-simple {
-            border-right: 1px solid $main-blue;
+            border: none;
+            margin-left: 0;
+        }
+
+        .slick-current {
+            border: none;
+            margin-left: 0;
         }
 
         .border-item-center {
@@ -61,7 +68,8 @@
             border-right: 1px solid $main-blue;
         }
 
-        .company-item {
+        .company-item a {
+            height: auto;
             min-height: 250px;
         }
 
@@ -77,10 +85,6 @@
 
         .row-3 {
             padding: 0 10px;
-        }
-
-        .slide-simple {
-            border-right: none;
         }
 
     }
