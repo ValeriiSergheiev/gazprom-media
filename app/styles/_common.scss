@@ -57,6 +57,12 @@ input, button {
 		font-weight: normal;
 		color: $main-blue;
 	}
+	p {
+		padding: 0 10px;
+		&:last-child {
+			margin-bottom: 40px;
+		}
+	}
 }
 
 .mt-1 {
