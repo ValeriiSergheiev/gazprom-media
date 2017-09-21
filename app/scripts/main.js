@@ -6,6 +6,7 @@ $(document).ready(function() {
 	//$('body').fadeIn(1500);
 
 	// Fades out the whole page when clicking links
+	var newLocation;
 	$('.link-page-fade').click(function(e) {
 		e.preventDefault();
 		newLocation = this.href;
@@ -79,5 +80,16 @@ $(document).ready(function() {
 			}
 			]
 		});
+
+		// auto load content
+		$('.lazy-load').slice(0, 2).show();
+		$('.show-more-btn').click(function(event) {
+			event.preventDefault();
+			$('.lazy-load:hidden').slice(0, 1).slideDown(200);
+			if ($('.lazy-load:hidden').length == 0) {
+				$('.show-more-btn').addClass('inactive-btn');
+			};
+		});
+		
 
 	});

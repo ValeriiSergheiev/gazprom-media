@@ -58,7 +58,7 @@
             <li><a class="link-page-fade" href="#">производство</a></li>
             <li><a class="link-page-fade" href="#">кинопрокат</a></li>
             <li class="submenu-link">
-              <a href="index.html">дистрибьюция</a>
+              <a class="link-page-fade" href="distr.html">дистрибьюция</a>
               <ul class="submenu">
                 <li><a class="link-page-fade" href="#">Премьерный контент</a></li>
                 <li><a class="link-page-fade" href="#">Библиотека цпш</a></li>
@@ -120,37 +120,71 @@
       <div class="row">
         <div class="columns">
 
-          <div class="media-item text-center border mt-1">
-            <a href="#">
-              <!-- image 1030 x 375 -->
-              <img src="images/distribution/1.jpg" alt="image">
-              <div class="media-text-title">
-                <h3>Project title</h3>
-                <p>Here text goes here text</p>
-                <span>1 september 2017</span>
-              </div>
-            </a>
+          <div class="media-item text-center border mt-1 lazy-load">
+            <div class="media-overflow">
+              <a class="wow animation-zoom" href="#" data-wow-offset="100">
+                <!-- image 1030 x 375 -->
+                <img src="images/distribution/1.jpg" alt="image">
+                <div class="media-text-title">
+                  <h3>Project title</h3>
+                  <p>Here text goes here text</p>
+                  <span>1 september 2017</span>
+                </div>
+              </a>
+            </div>
           </div>
 
-          <div class="media-item text-center border mt-1">
-            <a href="#">
-              <!-- image 1030 x 375 -->
-              <img src="images/distribution/2.jpg" alt="image">
-              <div class="media-text-title">
-                <h3>Project title</h3>
-                <p>Here text goes here text</p>
-                <span>1 september 2017</span>
-              </div>
-            </a>
+          <div class="media-item text-center border mt-1 lazy-load">
+            <div class="media-overflow">
+              <a class="wow animation-zoom" href="#" data-wow-offset="100">
+                <!-- image 1030 x 375 -->
+                <img src="images/distribution/2.jpg" alt="image">
+                <div class="media-text-title">
+                  <h3>Project title</h3>
+                  <p>Here text goes here text</p>
+                  <span>1 september 2017</span>
+                </div>
+              </a>
+            </div>
           </div>
 
-          <a href="#" class="show-more-btn">Show more</a>
+          <div class="media-item text-center border mt-1 lazy-load">
+            <div class="media-overflow">
+              <a class="wow animation-zoom" href="#" data-wow-offset="100">
+                <!-- image 1030 x 375 -->
+                <img src="images/distribution/1.jpg" alt="image">
+                <div class="media-text-title">
+                  <h3>Project title</h3>
+                  <p>Here text goes here text</p>
+                  <span>1 september 2017</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="media-item text-center border mt-1 lazy-load">
+            <div class="media-overflow">
+              <a class="wow animation-zoom" href="#" data-wow-offset="100">
+                <!-- image 1030 x 375 -->
+                <img src="images/distribution/2.jpg" alt="image">
+                <div class="media-text-title">
+                  <h3>Project title</h3>
+                  <p>Here text goes here text</p>
+                  <span>1 september 2017</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="#" class="show-more-btn">Show more</a>
+          </div>
 
         </div>
       </div>
     </main>
     <!-- End Main section -->
-    <div class="" style="height:500px;"></div>
+    
     <!-- Footer -->
     <footer>
       <div class="row">
@@ -190,11 +224,16 @@
     <script src="/bower_components/what-input/dist/what-input.js"></script>
     <script src="/bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="/bower_components/wow/dist/wow.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    <script>
+      new WOW().init();
+    </script>
   </body>
   </html>

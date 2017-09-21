@@ -4,7 +4,8 @@
   "dependencies": {
     "foundation-sites": "^6.4.3",
     "css-hamburgers": "^0.9.1",
-    "slick-carousel": "^1.8.0"
+    "slick-carousel": "^1.8.0",
+    "wow": "wowjs#^1.1.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",

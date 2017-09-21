@@ -80,3 +80,22 @@ input, button {
 .border {
 	border: 1px solid $main-blue;
 }
+
+//lazy load
+.lazy-load {
+	display: none;
+}
+
+.show-more-btn {
+	font-size: 30px;
+	margin-top: 50px;
+	&:hover {
+		color: $main-blue;
+	}
+}
+
+.inactive-btn {
+	color: $light-grey;
+	pointer-events: none;
+}
+//end lazy load
