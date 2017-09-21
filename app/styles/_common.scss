@@ -6,6 +6,9 @@
 }
 
 body {
+	//display: none;
+	animation-name: page-load;
+	animation-duration: 3s;
 	background: $main-grey;
 	font-family: 'Optima', Helvetica, Arial, sans-serif;
 	font-size: 18px;
@@ -58,7 +61,7 @@ input, button {
 		color: $main-blue;
 	}
 	p {
-		padding: 0 10px;
+		padding: 0 50px;
 		&:last-child {
 			margin-bottom: 40px;
 		}
@@ -69,8 +72,11 @@ input, button {
 	margin-top: -1px;
 }
 
-.row-3 {
+.row-3, .row-4 {
 	padding-left: 15px;
 	padding-right: 15px;
 }
 
+.border {
+	border: 1px solid $main-blue;
+}

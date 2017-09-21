@@ -20,7 +20,6 @@ header {
 
 .header-bottom {
 	margin-top: 30px;
-	//position: relative;
 }
 
 .lang-dropdown {
@@ -72,20 +71,50 @@ header {
 
 .menu {
 	text-align: center;
-	a {
-		font-size: 12px;
-		font-family: Proxima;
-		color: $main-blue;
-		text-transform: uppercase;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
 		margin: 0 12px;
+		line-height: 12px;
 		&:first-child {
 			margin-left: 0;
 		}
 		&:last-child {
 			margin-right: 0;
 		}
-		&:hover {
-			opacity: .7;
+		a {
+			font-size: 12px;
+			font-family: Proxima;
+			color: $main-blue;
+			text-transform: uppercase;
+			&:hover {
+				color: $light-grey;
+			}
+		}
+	}
+}
+
+.submenu-link {
+	position: relative;
+	&:hover .submenu {
+		display: block;
+	}
+}
+
+.submenu {
+	display: none;
+	background-color: $main-grey;
+	position: absolute;
+	top: 12px;
+	left: -50px;
+	right: -50px;
+	padding: 20px 10px 10px;
+	li {
+		margin: 0;
+		a {
+			margin: 10px 0;
 		}
 	}
 }

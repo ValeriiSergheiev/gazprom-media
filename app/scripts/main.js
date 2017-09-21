@@ -1,4 +1,19 @@
 $(document).ready(function() {
+
+	// Fades in whole page on load
+	// move to css
+	// $('body').css('display', 'none');
+	//$('body').fadeIn(1500);
+
+	// Fades out the whole page when clicking links
+	$('.link-page-fade').click(function(e) {
+		e.preventDefault();
+		newLocation = this.href;
+		$('body').fadeOut('slow', newpage);
+	});
+	function newpage() {
+		window.location = newLocation;
+	}
 	
 	//Mobile menu
 	$('.hamburger').click(function() {

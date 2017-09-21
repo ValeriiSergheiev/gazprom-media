@@ -16,11 +16,19 @@
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1024px) {
 
+        .header-top {
+            margin-top: 60px;
+        }
+
         .header-bottom {
             background-color: $main-grey;
-            position: relative;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
             z-index: 9999;
             padding: 15px 0;
+            margin-top: 0;
         }
 
         .menu {
@@ -28,11 +36,21 @@
             text-align: center;
             padding: 20px 0;
             margin: 10px 0;
+            li {
+                display: block;
+                margin: 0;
+            }
             a {
                 display: block;
                 margin: 10px 0;
             }
         }
+
+        .submenu-link {
+            &:hover .submenu {
+                display: none;
+            }
+        }        
 
         .search {
             display: none;
@@ -83,8 +101,29 @@
     /* Small Devices, Tablets */
     @media only screen and (max-width : 640px) {
 
-        .row-3 {
+        .row-3, .row-4 {
             padding: 0 10px;
+        }
+
+        .section-title {
+            p {
+                padding: 0 10px;
+            }
+        }
+
+        .tab-btn {
+            width: 100%;
+            border-bottom: none;
+            @for $i from 2 through 4 {
+                &:nth-child(#{$i}){
+                    flex-grow: 1;
+                    border-left: 1px solid $main-blue;
+                }
+            }
+        }
+
+        .media-text-title {
+            display: none;
         }
 
     }

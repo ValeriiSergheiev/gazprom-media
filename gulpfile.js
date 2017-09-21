@@ -124,6 +124,7 @@ gulp.task('serve:dist', ['default'], () => {
   browserSync.init({
     notify: false,
     port: 9000,
+    tunnel: true,
     server: {
       baseDir: ['dist']
     }

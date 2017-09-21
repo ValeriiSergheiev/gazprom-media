@@ -1,0 +1,74 @@
+// DISTRIBUTION PAGE
+.tab-panel {}
+
+.tab-btn {
+	border: 1px solid $main-blue;
+	a {
+		display: block;
+		padding: 25px 0;
+		&:hover {
+			color: $main-blue;
+		}
+	}
+	&:nth-child(1) {
+		flex-grow: .9;
+	}
+	@for $i from 2 through 4 {
+		&:nth-child(#{$i}){
+			flex-grow: 1;
+			border-left: none;
+		}
+	}
+}
+
+//media item
+.media-item {
+	padding: 10px;
+	position: relative;
+	a {
+		display: block;
+		overflow: hidden;
+		&:hover {
+			opacity: .9;
+		}
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			animation-name: media-item-animate;
+			animation-duration: 3s;
+			//animation-delay: 1s;
+		}
+	}
+}
+
+.media-text-title {
+	position: absolute;
+	padding: 25px 0 10px;
+	bottom: 10px;
+	left: calc(50% - 410px / 2);
+	min-height: 65px;
+	width: 410px;
+	max-width: 410px;
+	background-color: $main-grey;
+	animation-name: media-item-title-animate;
+	animation-duration: 3s;
+	//animation-delay: 1s;
+	h3 {
+		font-size: 22px;
+		font-weight: normal;
+		margin: 0;
+		line-height: 1.2;
+	}
+	p {
+		margin: 0;
+		margin-top: 10px;
+	}
+	span {
+		font-size: 12px;
+		font-family: Proxima;
+		text-transform: uppercase;
+		color: $main-blue;
+	}
+}
+
