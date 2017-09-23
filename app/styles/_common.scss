@@ -72,6 +72,10 @@ input, button {
 	margin-top: -1px;
 }
 
+.mb-70 {
+	margin-bottom: 70px;
+}
+
 .row-3, .row-4 {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -88,13 +92,9 @@ input, button {
 	right: 0;
 }
 
-.show-more-divider {
-	margin-top: 50px;
-}
-
 .show-more-btn {
 	font-size: 30px;
-	//margin-top: 50px;
+	margin-top: 50px;
 	&:hover {
 		color: $main-blue;
 	}

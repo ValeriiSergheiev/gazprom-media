@@ -99,4 +99,19 @@ $(document).ready(function() {
 			loadingHtml: '<p class="">Загрузка ...</p>'
 		});
 
+		// Vimeo customization
+		var vimeo_options = {
+			autoPlay: true
+		};
+		$('.PreVideoLoad').PreVideoLoad(vimeo_options);
+		var videoWidth, videoHeigth;
+		videoWidth = $('.PreVideoLoad').width();
+		videoHeigth = videoWidth * .5625;
+		$('.PreVideoLoad').height(videoHeigth);
+		$(window).resize(function() {
+			videoWidth = $('.PreVideoLoad').width();
+			videoHeigth = videoWidth * .5625;
+			$('.PreVideoLoad').height(videoHeigth);
+		});
+
 	});
