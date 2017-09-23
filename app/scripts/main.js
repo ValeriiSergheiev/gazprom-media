@@ -82,14 +82,18 @@ $(document).ready(function() {
 		});
 
 		// auto load content
-		$('.lazy-load').slice(0, 2).show();
+		/*$('.lazy-load').slice(0, 2).show();
 		$('.show-more-btn').click(function(event) {
 			event.preventDefault();
 			$('.lazy-load:hidden').slice(0, 1).slideDown(200);
 			if ($('.lazy-load:hidden').length == 0) {
 				$('.show-more-btn').addClass('inactive-btn');
 			};
+		});*/
+
+		//jScroll activate
+		$('.scroll').jscroll({
+			autoTrigger: false
 		});
-		
 
 	});
