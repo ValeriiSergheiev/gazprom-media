@@ -82,13 +82,19 @@ input, button {
 }
 
 //lazy load
-.lazy-load {
-	//display: none;
+.show-more-wrapper {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.show-more-divider {
+	margin-top: 50px;
 }
 
 .show-more-btn {
 	font-size: 30px;
-	margin-top: 50px;
+	//margin-top: 50px;
 	&:hover {
 		color: $main-blue;
 	}
@@ -99,3 +105,8 @@ input, button {
 	pointer-events: none;
 }
 //end lazy load
+
+.block-ajax-load {
+	animation-name: page-ajax-load;
+	animation-duration: 3s;
+}

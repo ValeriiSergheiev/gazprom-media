@@ -10,7 +10,8 @@ $(document).ready(function() {
 	$('.link-page-fade').click(function(e) {
 		e.preventDefault();
 		newLocation = this.href;
-		$('body').fadeOut('slow', newpage);
+		$('a.animation-zoom').addClass('animation-zoom-out');
+		$('body').delay(400).fadeOut(1000, newpage);
 	});
 	function newpage() {
 		window.location = newLocation;
@@ -93,7 +94,9 @@ $(document).ready(function() {
 
 		//jScroll activate
 		$('.scroll').jscroll({
-			autoTrigger: false
+			autoTrigger: false,
+			//loadingHtml: '<img src="../images/load.gif" alt="Loading" />'
+			loadingHtml: '<p class="">Загрузка ...</p>'
 		});
 
 	});
