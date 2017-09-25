@@ -91,6 +91,15 @@
             min-height: 250px;
         }
 
+        .back-btn {
+            float: none;
+            & + nav {
+                float: none;
+                margin-left: 20px;
+                padding-top: 0;
+            }
+        }
+
     }
 
     /* Medium Devices, Desktops */

@@ -82,6 +82,15 @@ $(document).ready(function() {
 			]
 		});
 
+		$('.slider-project').slick({
+			infinite: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: false,
+			prevArrow: '<button type="button" class="slick-prev"></button>',
+			nextArrow: '<button type="button" class="slick-next"></button>'
+		});
+
 		// auto load content
 		/*$('.lazy-load').slice(0, 2).show();
 		$('.show-more-btn').click(function(event) {
@@ -104,6 +113,7 @@ $(document).ready(function() {
 			autoPlay: true
 		};
 		$('.PreVideoLoad').PreVideoLoad(vimeo_options);
+
 		var videoWidth, videoHeigth;
 		videoWidth = $('.PreVideoLoad').width();
 		videoHeigth = videoWidth * .5625;
