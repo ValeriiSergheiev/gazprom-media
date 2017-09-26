@@ -100,6 +100,28 @@
             }
         }
 
+        .media-details-image {
+            border-right: 1px solid $main-blue;
+            img {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+
+        .media-details-text {
+            margin-top: -1px;
+        }
+
+        .media-details-text-bottom {
+            position: static;
+            margin-top: 50px;
+            padding-bottom: 30px;
+        }
+
+        .see-also-item {
+            border-right: 1px solid $main-blue !important;
+        }
+
     }
 
     /* Medium Devices, Desktops */
@@ -110,7 +132,7 @@
     /* Small Devices, Tablets */
     @media only screen and (max-width : 640px) {
 
-        .row-3, .row-4 {
+        .row-3, .row-4, .row-padding {
             padding: 0 10px;
         }
 
