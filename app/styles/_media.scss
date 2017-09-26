@@ -122,6 +122,16 @@
             border-right: 1px solid $main-blue !important;
         }
 
+        .kit-kino-item {
+            padding: 10px;
+            h3 {
+                font-size: 30px;
+            }
+            &:nth-child(2) {
+                border-right: 1px solid $main-blue;
+            }
+        }
+
     }
 
     /* Medium Devices, Desktops */

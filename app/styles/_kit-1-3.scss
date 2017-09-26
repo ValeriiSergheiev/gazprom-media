@@ -1,0 +1,31 @@
+// 1-3 Kit page
+.kit-kino {
+	img {
+		width: 100px;
+		margin-top: 35px;
+		margin-bottom: 20px;
+	}
+}
+
+.kit-kino-item {
+	padding: 30px;
+	&:not(:last-child) {
+		border-right: none;
+	}
+	h3 {
+		font-size: 40px;
+		font-weight: normal;
+		color: $main-blue;
+		margin-bottom: 20px;
+		span {
+			font-size: 18px;
+		}
+	}
+	article {
+		font-size: 16px;
+	}
+}
+
+.kit-kino-text {
+	padding-top: 20px;
+}
